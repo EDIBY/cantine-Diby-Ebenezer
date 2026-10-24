@@ -1,5 +1,5 @@
 let client = "Awa";
-let codeduplat = 2;
+let codeduplat = 1;
 let montantverse = 5000;
 
 
@@ -19,11 +19,11 @@ default:
 function calculertotal(prixUnitaire, quantite) {
     return prixUnitaire * quantite;
 }
-let totalpaye = calculertotal(2000,6)
-console.log(totalpaye)
+let totalpaye = calculertotal(1500,3)
+console.log(`Total payé : ${totalpaye}`)
 let monnaierendu = montantverse - totalpaye
 let manquant = montantverse - totalpaye
-let totalportion = 2
+let totalportion =3
 for(let portion = 1; portion <= totalportion; portion++){
     console.log(`Portion n° ${portion}, code du plat ${codeduplat}, commandé par ${client} `)
 }
