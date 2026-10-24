@@ -1,6 +1,6 @@
 let client = "Awa";
 let codeduplat = 2;
-let montantverse = 5000; 
+let montantverse = 5000;
 
 
 switch(codeduplat)
@@ -24,21 +24,16 @@ console.log(totalpaye)
 let monnaierendu = montantverse - totalpaye
 let manquant = montantverse - totalpaye
 
-for(let codeduplat = 1; codeduplat<=3; codeduplat++){
-    if(codeduplat = 1){
-        console.log(`Plat de Attiké-poisson, commandé par : ${client}, le tota à payer est ${totalpaye}`);  
-    }
-    else if(codeduplat = 2){
-         console.log(`Plat de Riz-poulet, commandé par : ${client}, le tota à payer est ${totalpaye}`);
-    }
-    else{
-         console.log(`Plat de Alloco-oeuf, commandé par : ${client}, le tota à payer est ${totalpaye}`);
-    }
+for(let portion = 1; portion >= 1; portion++){
+    console.log(`Portion n° ${portion}, code du plat ${codeduplat}, commandé par ${client} `)
+}
     if(montantverse > totalpaye){
       console.log(`La monnaie rendu est  ${monnaierendu}`);
     }  
-    else(montantverse < totalpaye){
+    else if(montantverse < totalpaye){
         console.log(`Le montant manquant est  ${manquant}`);
     }
+    else{
+        console.log(`La facture a été réglé il n'y a pas de monnaie à rendre`);
     }
 
