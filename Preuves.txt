@@ -1,0 +1,15 @@
+PS C:\Users\DELL\Documents\cantine-Diby-Ebenezer> node cantine.js
+Prix du plat : 1500 FCFA
+Total payé : 4500 FCFA
+Portion n° 1, code du plat 1, commandé par Awa 
+Portion n° 2, code du plat 1, commandé par Awa 
+Portion n° 3, code du plat 1, commandé par Awa 
+La monnaie rendu est  500 FCFA
+
+PS C:\Users\DELL\Documents\cantine-Diby-Ebenezer> node cantine.js
+Prix du plat : 1000 FCFA
+Total payé : 4000 FCFA
+Portion n° 1, code du plat 3, commandé par Awa 
+Portion n° 2, code du plat 3, commandé par Awa 
+Portion n° 3, code du plat 3, commandé par Awa 
+Le montant manquant est  0 FCFA

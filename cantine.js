@@ -1,6 +1,6 @@
 let client = "Awa"; // nom du client
-let codeduplat = 3; // code du plat
-let montantverse = 4000; // le montant remi par le client
+let codeduplat = 2; // code du plat
+let montantverse = 3000; // le montant remi par le client
 
 
 switch(codeduplat) // sert a selectionné le pla
@@ -20,11 +20,11 @@ default:
 function calculertotal(prixUnitaire, quantite) {
     return prixUnitaire * quantite;
 } // fonction calculant le montant a payé.
-let totalpaye = calculertotal(1000,4)
+let totalpaye = calculertotal(2000,2)
 console.log(`Total payé : ${totalpaye} FCFA`)
 let monnaierendu = montantverse - totalpaye // variable qui permet le calcul la monnaie rendu
-let manquant = montantverse - totalpaye    // variable qui permet calcul le montant manquant
-let totalportion =3 // variable qui declare le nombre de portion
+let manquant = Math.abs(montantverse - totalpaye)    // variable qui permet calcul le montant manquant
+let totalportion =2 // variable qui declare le nombre de portion
 for(let portion = 1; portion <= totalportion; portion++){ // affiche les portion et nom client 
     console.log(`Portion n° ${portion}, code du plat ${codeduplat}, commandé par ${client} `)
 }
