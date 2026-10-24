@@ -20,7 +20,7 @@ function calculertotal(prixUnitaire, quantite) {
     return prixUnitaire * quantite;
 }
 let totalpaye = calculertotal(1500,3)
-console.log(`Total payé : ${totalpaye}`)
+console.log(`Total payé : ${totalpaye} FCFA`)
 let monnaierendu = montantverse - totalpaye
 let manquant = montantverse - totalpaye
 let totalportion =3
@@ -28,12 +28,12 @@ for(let portion = 1; portion <= totalportion; portion++){
     console.log(`Portion n° ${portion}, code du plat ${codeduplat}, commandé par ${client} `)
 }
     if(montantverse > totalpaye){
-      console.log(`La monnaie rendu est  ${monnaierendu}`);
+      console.log(`La monnaie rendu est  ${monnaierendu} FCFA`);
     }  
     else if(montantverse < totalpaye){
-        console.log(`Le montant manquant est  ${manquant}`);
+        console.log(`Le montant manquant est  ${manquant} FCFA`);
     }
     else{
-        console.log(`La facture a été réglé il n'y a pas de monnaie à rendre`);
+        console.log(`Facture réglée, pas de monnaie à rendre`);
     }
 
