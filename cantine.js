@@ -23,8 +23,8 @@ let totalpaye = calculertotal(2000,6)
 console.log(totalpaye)
 let monnaierendu = montantverse - totalpaye
 let manquant = montantverse - totalpaye
-
-for(let portion = 1; portion >= 1; portion++){
+let totalportion = 2
+for(let portion = 1; portion <= totalportion; portion++){
     console.log(`Portion n° ${portion}, code du plat ${codeduplat}, commandé par ${client} `)
 }
     if(montantverse > totalpaye){
