@@ -2,6 +2,7 @@ let client = "Awa";
 let codeduplat = 2;
 let montantverse = 5000; 
 
+
 switch(codeduplat)
 { case 1 : 
     console.log(`Prix du plat : 1500 FCFA`);
@@ -20,6 +21,8 @@ function calculertotal(prixUnitaire, quantite) {
 }
 let totalpaye = calculertotal(2000,6)
 console.log(totalpaye)
+let monnaierendu = montantverse - totalpaye
+let manquant = montantverse - totalpaye
 
 for(let codeduplat = 1; codeduplat<=3; codeduplat++){
     if(codeduplat = 1){
@@ -31,4 +34,11 @@ for(let codeduplat = 1; codeduplat<=3; codeduplat++){
     else{
          console.log(`Plat de Alloco-oeuf, commandé par : ${client}, le tota à payer est ${totalpaye}`);
     }
-}
+    if(montantverse > totalpaye){
+      console.log(`La monnaie rendu est  ${monnaierendu}`);
+    }  
+    else(montantverse < totalpaye){
+        console.log(`Le montant manquant est  ${manquant}`);
+    }
+    }
+
